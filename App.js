@@ -2,12 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import ContadorV2 from './src/components/contador/ContadorV2';
-
+import Diferenciar from './src/components/Diferenciar';
 export default function App() {
     return (
         <View style={styles.container}>
-            <ContadorV2></ContadorV2>
+            <Diferenciar></Diferenciar>
             <StatusBar style="auto" />
         </View>
     );
