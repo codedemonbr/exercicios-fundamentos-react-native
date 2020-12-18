@@ -2,12 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 
-import ListaProdutos from './src/components/produtos/ListaProdutos';
+import ListaProdutosV2 from './src/components/produtos/ListaProdutosV2';
 
 export default function App() {
     return (
         <SafeAreaView style={styles.container}>
-            <ListaProdutos></ListaProdutos>
+            <ListaProdutosV2 />
             <StatusBar style="auto" />
         </SafeAreaView>
     );
