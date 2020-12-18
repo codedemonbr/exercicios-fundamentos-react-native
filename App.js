@@ -1,14 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
 
-import Diferenciar from './src/components/Diferenciar';
+import Familia from './src/components/relacao/Familia';
+import Membro from './src/components/relacao/Membro';
+
 export default function App() {
     return (
-        <View style={styles.container}>
-            <Diferenciar></Diferenciar>
+        <SafeAreaView style={styles.container}>
+            <Familia>
+                <Membro nome="Bia" sobrenome="Arruda"></Membro>
+                <Membro nome="Vitor" sobrenome="Arruda"></Membro>
+            </Familia>
+            <Familia>
+                <Membro nome="Ana Carolina" sobrenome="Santos"></Membro>
+            </Familia>
             <StatusBar style="auto" />
-        </View>
+        </SafeAreaView>
     );
 }
 
