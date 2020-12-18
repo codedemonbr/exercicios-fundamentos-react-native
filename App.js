@@ -2,19 +2,19 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 
-import Familia from './src/components/relacao/Familia';
-import Membro from './src/components/relacao/Membro';
+import UsuarioLogado from './src/components/UsuarioLogado';
 
 export default function App() {
     return (
         <SafeAreaView style={styles.container}>
-            <Familia>
-                <Membro nome="Bia" sobrenome="Arruda"></Membro>
-                <Membro nome="Vitor" sobrenome="Arruda"></Membro>
-            </Familia>
-            <Familia>
-                <Membro nome="Ana Carolina" sobrenome="Santos"></Membro>
-            </Familia>
+            <UsuarioLogado
+                usuario={{ nome: 'Pedro', email: 'pedro@email.com' }}
+            ></UsuarioLogado>
+            <UsuarioLogado usuario={{ nome: 'Arthur' }}></UsuarioLogado>
+            <UsuarioLogado usuario={{ email: 'bob@email.com' }}></UsuarioLogado>
+            <UsuarioLogado usuario={null}></UsuarioLogado>
+            <UsuarioLogado usuario={{}}></UsuarioLogado>
+
             <StatusBar style="auto" />
         </SafeAreaView>
     );
