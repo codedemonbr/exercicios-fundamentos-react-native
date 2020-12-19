@@ -1,19 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, View } from 'react-native';
 
-import DigiteSeuNome from './src/components/DigiteSeuNome';
+import FlexBoxV1 from './src/components/layout/FlexBoxV1';
+
 export default function App() {
     return (
-        <SafeAreaView style={styles.container}>
-            <DigiteSeuNome />
+        <View style={style.container}>
+            <FlexBoxV1 />
             <StatusBar style="auto" />
-        </SafeAreaView>
+        </View>
     );
 }
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
     container: {
+        padding: 20,
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
