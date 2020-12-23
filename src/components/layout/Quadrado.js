@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 
 export default (props) => {
-    let lado = 50;
+    let lado = props.lado || 50;
     return (
         <View
             style={{
