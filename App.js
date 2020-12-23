@@ -2,12 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, View } from 'react-native';
 
-import FlexBoxV1 from './src/components/layout/FlexBoxV1';
+import FlexBoxV2 from './src/components/layout/FlexBoxV2';
 
 export default function App() {
     return (
         <View style={style.container}>
-            <FlexBoxV1 />
+            <FlexBoxV2 />
             <StatusBar style="auto" />
         </View>
     );
